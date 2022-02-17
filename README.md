@@ -1,8 +1,55 @@
-## The Golden Rule:
-
-🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
-
-If you work on more than one feature at a time, you are guaranteed to multiply your bugs and your anxiety.
+O) Create files
+    A) signin folder
+        1) index.html
+        2) signin.css
+        3) signin.js
+    B) home folder
+        1) index.html
+        2) app.js
+    C) styles
+        1) reset.css
+        2) home.css
+        3) styles.css
+    D)  tests
+    E) link files together correctly
+I) Create Database
+    A) Add table
+        1) user_id
+            a) default: uid()
+        2) item
+        3) department
+        4) bought status (boolean)
+    B) add RLS
+        1) users can only access their rows
+        2) uid() = user_id?
+    C) add to html/js
+        1) add key
+        2) add url
+        3) add in html
+II) Fetch utils
+    A) fetch all items                      R
+    B) Create item (adds to database)       C
+    C) delete all items                     D
+    D) bought item                          U
+        1) change value to true
+III) Render database
+    A) Renderitem
+        1) create sample html
+        2) grab object from database to copy to test
+        3) TDD
+    B) Append to DOM
+        1) render items
+IV) Add item
+    A) Create item - II)B
+    B) Rerender to display new database
+        1) reset
+        2) display again
+V) Checkoff item
+    A) Add event listener to items
+    B) Add class to items
+VI) Delete items
+    A) Delete items function
+    B) Rerender on DOM
 
 ## Making a plan
 
