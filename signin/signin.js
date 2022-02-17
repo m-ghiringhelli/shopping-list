@@ -1,9 +1,17 @@
 import { checkAuth, logout } from '../fetch-utils.js';
 
-checkAuth();
+const signInForm = document.getElementById('sign-in');
 
-const logoutButton = document.getElementById('logout');
-
-logoutButton.addEventListener('click', () => {
-    logout();
+signInForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    console.log('clicked');
 });
+
+
+// checkAuth();
+
+// const logoutButton = document.getElementById('logout');
+
+// logoutButton.addEventListener('click', () => {
+//     logout();
+// });
