@@ -40,9 +40,9 @@ I) Create Database
         2) signin
             a) form CHECK
             b) button   CHECK
-            c) eventlisteners
-            d) let's verify login works
-            e) and redirecting to list
+            c) eventlisteners   CHECK
+            d) let's verify login works CHECK
+            e) and redirecting to list  CHECK
         3) list (main)
 II) Fetch utils
     A) fetch all items                      R

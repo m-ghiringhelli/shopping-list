@@ -13,9 +13,21 @@ export function checkAuth() {
     if (!user) location.replace('../');
 }
 
-export function redirectIfLoggedIn() {
+// export function redirectIfLoggedIn() {
+//     if (getUser()) {
+//         location.replace('../list');
+//     }
+// }
+
+export function redirectFromSignIn() {
     if (getUser()) {
         location.replace('../list');
+    }
+}
+
+export function redirectFromSignUp() {
+    if (getUser()) {
+        location.replace('./list');
     }
 }
 

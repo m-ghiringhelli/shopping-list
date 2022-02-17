@@ -1,4 +1,4 @@
-import { redirectIfLoggedIn, signInUser, signupUser } from './fetch-utils.js';
+import { redirectFromSignUp, signInUser, signupUser } from './fetch-utils.js';
 
 const signInForm = document.getElementById('sign-in');
 const signInEmail = document.getElementById('sign-in-email');
@@ -9,18 +9,18 @@ const signUpEmail = document.getElementById('sign-up-email');
 const signUpPassword = document.getElementById('sign-up-password');
 
 // if user currently logged in, redirect
-// redirectIfLoggedIn();
+redirectFromSignUp();
 
-// signUpForm.addEventListener('submit', async (event) => {
-//     event.preventDefault();
-//     const user = await signupUser(signUpEmail.value, signUpPassword.value);
+signUpForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const user = await signupUser(signUpEmail.value, signUpPassword.value);
 
-//     if (user) {
-//         redirectIfLoggedIn();
-//     } else {
-//         console.error(user);
-//     }
-// });
+    if (user) {
+        redirectFromSignUp();
+    } else {
+        console.error(user);
+    }
+});
 
 // signInForm.addEventListener('submit', async (event) => {
 //     event.preventDefault();
