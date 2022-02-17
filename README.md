@@ -13,18 +13,18 @@ O) Create files
         1) reset.css    CHECK
         2) home.css CHECK
         3) styles.css   CHECK
-    D)  tests
+    D)  tests   CHECK
     E) link files together correctly
 I) Create Database
-    A) Add table
-        1) user_id
-            a) default: uid()
-        2) item
+    A) Add table    CHECK
+        1) user_id  CHECK
+            a) default: uid()   CHECK
+        2) item CHECK
         3) department
-        4) bought status (boolean)
-    B) add RLS
-        1) users can only access their rows
-        2) uid() = user_id?
+        4) bought status (boolean)  CHECK
+    B) add RLS  CHECK
+        1) users can only access their rows CHECK
+        2) uid() = user_id? CHECK
     C) add to html/js
         1) add key
         2) add url
