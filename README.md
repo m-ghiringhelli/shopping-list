@@ -31,15 +31,15 @@ I) Create Database
         3) add in html  CHECK
     D) Okay I need the bare minimum of html to see what's going on and getting this functioning
         1) signup (home)
-            a) form
-            b) button
+            a) form CHECK
+            b) button   CHECK
             c) eventlisteners
             d) let's verify signup works
             e) and redirecting to signin
             f) redirect to list on sign up
         2) signin
-            a) form
-            b) button
+            a) form CHECK
+            b) button   CHECK
             c) eventlisteners
             d) let's verify login works
             e) and redirecting to list
