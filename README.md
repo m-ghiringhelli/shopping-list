@@ -34,7 +34,7 @@ I) Create Database
             a) form CHECK
             b) button   CHECK
             c) eventlisteners
-            d) let's verify signup works
+            d) let's verify signup works    CHECK
             e) and redirecting to signin
             f) redirect to list on sign up
         2) signin
@@ -44,6 +44,10 @@ I) Create Database
             d) let's verify login works CHECK
             e) and redirecting to list  CHECK
         3) list (main)
+            a) add item form
+            b) get list
+            c) render list
+            d) append list
 II) Fetch utils
     A) fetch all items                      R
     B) Create item (adds to database)       C
