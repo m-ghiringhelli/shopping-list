@@ -31,6 +31,10 @@ export function redirectFromSignUp() {
     }
 }
 
+export async function fetchGroceryItems() {
+    
+}
+
 export async function signupUser(email, password) {
     const response = await client.auth.signUp({ email, password });
 
