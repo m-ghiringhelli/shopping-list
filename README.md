@@ -28,7 +28,22 @@ I) Create Database
     C) add to html/js
         1) add key
         2) add url
-        3) add in html
+        3) add in html  CHECK
+    D) Okay I need the bare minimum of html to see what's going on and getting this functioning
+        1) signup (home)
+            a) form
+            b) button
+            c) eventlisteners
+            d) let's verify signup works
+            e) and redirecting to signin
+            f) redirect to list on sign up
+        2) signin
+            a) form
+            b) button
+            c) eventlisteners
+            d) let's verify login works
+            e) and redirecting to list
+        3) list (main)
 II) Fetch utils
     A) fetch all items                      R
     B) Create item (adds to database)       C
