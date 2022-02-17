@@ -1,15 +1,18 @@
 O) Create files
     A) signin folder
-        1) index.html
-        2) signin.css
-        3) signin.js
-    B) home folder
-        1) index.html
-        2) app.js
+        1) index.html   CHECK
+        3) signin.js    CHECK
+    B) home (signup) folder CHECK
+        1) index.html   CHECK
+        2) app.js   CHECK
+    C) list folder
+        1) index.html   CHECK
+        2) list.js  CHECK
+        3) list.css CHECK
     C) styles
-        1) reset.css
-        2) home.css
-        3) styles.css
+        1) reset.css    CHECK
+        2) home.css CHECK
+        3) styles.css   CHECK
     D)  tests
     E) link files together correctly
 I) Create Database
