@@ -52,8 +52,8 @@ II) Fetch utils
     A) fetch all items                      R   CHECK
     B) Create item (adds to database)       C   CHECK
     C) delete all items                     D
-    D) bought item                          U
-        1) change value to true
+    D) bought item                          U   CHECK
+        1) change value to true CHECK
 III) Render database
     A) Renderitem   CHECK
         1) create sample html   CHECK
@@ -62,13 +62,13 @@ III) Render database
     B) Append to DOM    CHECK
         1) render items CHECK
 IV) Add item
-    A) Create item - II)B
-    B) Rerender to display new database
-        1) reset
-        2) display again
+    A) Create item - II)B   CHECK
+    B) Rerender to display new database CHECK
+        1) reset    CHECK
+        2) display again    CHECK
 V) Checkoff item
-    A) Add event listener to items
-    B) Add class to items
+    A) Add event listener to items  CHECK
+    B) Add class to items   CHECK
 VI) Delete items
     A) Delete items function
     B) Rerender on DOM

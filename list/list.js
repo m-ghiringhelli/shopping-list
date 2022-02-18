@@ -3,13 +3,15 @@ import {
     addGroceryItem, 
     logout, 
     checkAuth, 
-    putInCart } from '../fetch-utils.js';
+    putInCart,
+    clearGroceries } from '../fetch-utils.js';
 import { renderListItem } from '../render-utils.js';
 
 checkAuth();
 displayGroceries();
 
 const logoutButton = document.getElementById('logout-button');
+const clearButton = document.getElementById('clear');
 const addItemForm = document.getElementById('add-item-form');
 
 logoutButton.addEventListener('click', () => {
@@ -41,4 +43,6 @@ async function displayGroceries() {
     }
 }
 
-
+clearButton.addEventListener('click', async () => {
+    clearGroceries();
+});

@@ -40,6 +40,10 @@ export async function putInCart(id) {
     return checkError(response);
 }
 
+export async function clearGroceries() {
+    const response = await client.from('groceries').delete().match({ user_id: getUser().id });
+}
+
 export async function signupUser(email, password) {
     const response = await client.auth.signUp({ email, password });
 
