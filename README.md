@@ -26,8 +26,8 @@ I) Create Database
         1) users can only access their rows CHECK
         2) uid() = user_id? CHECK
     C) add to html/js
-        1) add key
-        2) add url
+        1) add key  CHECK
+        2) add url  CHECK
         3) add in html  CHECK
     D) Okay I need the bare minimum of html to see what's going on and getting this functioning
         1) signup (home)
@@ -44,21 +44,21 @@ I) Create Database
             d) let's verify login works CHECK
             e) and redirecting to list  CHECK
         3) list (main)
-            a) add item form
-            b) get list
+            a) add item form    CHECK
+            b) get list CHECK
             c) render list
             d) append list
 II) Fetch utils
-    A) fetch all items                      R
+    A) fetch all items                      R   CHECK
     B) Create item (adds to database)       C
     C) delete all items                     D
     D) bought item                          U
         1) change value to true
 III) Render database
-    A) Renderitem
-        1) create sample html
-        2) grab object from database to copy to test
-        3) TDD
+    A) Renderitem   CHECK
+        1) create sample html   CHECK
+        2) grab object from database to copy to test    CHECK
+        3) TDD  CHECK
     B) Append to DOM
         1) render items
 IV) Add item
