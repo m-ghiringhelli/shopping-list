@@ -46,8 +46,8 @@ I) Create Database
         3) list (main)
             a) add item form    CHECK
             b) get list CHECK
-            c) render list
-            d) append list
+            c) render list  CHECK
+            d) append list  CHECK
 II) Fetch utils
     A) fetch all items                      R   CHECK
     B) Create item (adds to database)       C
@@ -59,8 +59,8 @@ III) Render database
         1) create sample html   CHECK
         2) grab object from database to copy to test    CHECK
         3) TDD  CHECK
-    B) Append to DOM
-        1) render items
+    B) Append to DOM    CHECK
+        1) render items CHECK
 IV) Add item
     A) Create item - II)B
     B) Rerender to display new database

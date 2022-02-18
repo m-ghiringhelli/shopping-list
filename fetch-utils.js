@@ -13,12 +13,6 @@ export function checkAuth() {
     if (!user) location.replace('../');
 }
 
-// export function redirectIfLoggedIn() {
-//     if (getUser()) {
-//         location.replace('../list');
-//     }
-// }
-
 export function redirectFromSignIn() {
     if (getUser()) {
         location.replace('../list');
@@ -33,6 +27,11 @@ export function redirectFromSignUp() {
 
 export async function fetchGroceryItems() {
     const response = await client.from('groceries').select();
+    return checkError(response);
+}
+
+export async function addGroceryItem(item) {
+    const response = await client.from('groceries').insert(item);
     return checkError(response);
 }
 
