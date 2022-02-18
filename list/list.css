@@ -1,3 +1,92 @@
+body {
+    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below */
+    --color1: hsla(240, 9%, 13%, 1);
+    --color2: hsla(100, 100%, 99%, 1);
+    --color3: hsla(128, 97%, 46%, 1);
+    --color4: hsla(148, 24%, 44%, 1);
+    --color5: hsla(248, 49%, 64%, 1);
+}
+
+#main-header {
+    background-color: var(--color1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logout-button {
+    font-size: 1rem;
+    padding: 5px;
+    margin: 0px 15px;
+    cursor: pointer;
+}
+
+#logout-button:active {
+    background-color: var(--color4);
+}
+
+#main-header h1 {
+    font-size: 2rem;
+    color: var(--color3);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 15px 0px;
+}
+
+.hidden {
+    display: none;
+}
+
+#add-item-form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0px;
+}
+
+#add-item {
+    border-radius: 7px 0px 0px 7px;
+    border-right: none;
+    margin-bottom: 0px;
+}
+
+#add-item-button {
+    border-radius: 0px 7px 7px 0px;
+    border-top: 2px solid var(--color1);
+    border-right: 2px solid var(--color1);
+    border-bottom: 2px solid var(--color1);
+    margin-bottom: 0px;
+    font-size: 0.8rem;
+}
+
+#add-item-button:hover {
+    background-color:hsla(128, 97%, 40%, 1);
+}
+
+#add-item-button:active {
+    background-color: var(--color4);
+}
+
+#show-add-item {
+    color: var(--color2);
+    font-size: 4rem;
+    font-weight: 800;
+    padding: 0px 5px 10px 5px;
+    margin: 0px 15px;
+    cursor: pointer;
+}
+
+#show-add-item:active {
+    color: var(--color4);
+}
+
+#grocery-list-container {
+    text-align: center;
+}
+
 .in-cart {
     background-color: lightcoral;
 }

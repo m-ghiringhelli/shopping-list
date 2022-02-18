@@ -7,6 +7,7 @@ const signUpPassword = document.getElementById('sign-up-password');
 // if user currently logged in, redirect
 redirectFromSignUp();
 
+//signs in user and redirect to list
 signUpForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const user = await signupUser(signUpEmail.value, signUpPassword.value);

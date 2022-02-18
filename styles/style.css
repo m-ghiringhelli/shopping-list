@@ -5,4 +5,75 @@ body {
     --color3: hsla(128, 97%, 46%, 1);
     --color4: hsla(148, 24%, 44%, 1);
     --color5: hsla(248, 49%, 64%, 1);
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+}
+
+h3 {
+    margin: 25px 0px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+input {
+    width: 65%;
+    margin: 25px 0px;
+    font-size: 1.4rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 300;
+    border-radius: 7px;
+    color: var(--color4);
+    height: 4rem;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--color5);
+}
+
+#header {
+    background-color: var(--color1);
+    color: var(--color3);
+    font-weight: 400;
+    padding: 25px 0px;
+    margin-bottom: 25px;
+}
+
+button {
+    margin: 25px 0px;
+    font-size: 2rem;
+    font-family: 'IBM Plex Mono', monospace;
+    border-radius: 7px;
+    border: none;
+    background-color: var(--color3);
+    color: var(--color2);
+    padding: 5px 10px;
+}
+
+button:active {
+    background-color: var(--color4);
+}
+
+p {
+    font-weight: 200;
+    text-align: center;
+}
+
+a {
+    color: var(--color4);
 }

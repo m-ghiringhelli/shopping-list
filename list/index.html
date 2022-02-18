@@ -15,16 +15,22 @@
     <title>gros-tron 5000</title>
 </head>
 <body>
-    <button id="logout-button">logout</button>
-    <h1>grocery list</h1>
-    <form id="add-item-form">
-        <input name="add-item" id="add-item" type="text">
-        <button>add item</button>
-        <button id="clear">clear all</button>
-    </form>
+    <header id="main-header">
+        <button id="logout-button" class="button">logout</button>
+        <h1>groc-tron 5000</h1>
+        <div id="show-add-item" class="button">+</div>
+    </header>
+    <div id="add-item-container" class="hidden">
+        <form id="add-item-form">
+            <input name="add-item" id="add-item" type="text">
+            <button id="add-item-button">add item</button>
+        </form>
+    </div>
+    <h2>grocery list</h2>
     <div id="grocery-list-container">
         <ul id="grocery-list">
         </ul>
+        <button id="clear">clear all</button>
     </div>
     <script type="module" src="./list.js"></script>
 </body>

@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="./styles/style.css">
@@ -17,17 +16,17 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <h1>groc-tron 5000</h1>
     </header>
     <main>
-        <form id="sign-up">
+        <form id="sign-up" class="auth-form">
             <h3>sign-up:</h3>
-            <label>email:</label><input type="email" name="email" id="sign-up-email" placeholder="email">
-            <label>password</label><input type="password" name="password" id="sign-up-password" placeholder="password">
+            <label>email:</label><input type="email" name="email" id="sign-up-email" placeholder="email" onfocus=this.value=''>
+            <label>password:</label><input type="password" name="password" id="sign-up-password" placeholder="password" onfocus="this.value=''">
             <button>sign-up</button>
         </form>
-        <p>already have an account? <a href="./signin/index.html">sign-in</a> here</p>
+        <p>already have an account? <a href="./signin/index.html">sign-in here</a></p>
     </main>
     <footer>
     </footer>

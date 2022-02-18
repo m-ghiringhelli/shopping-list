@@ -13,9 +13,14 @@ displayGroceries();
 const logoutButton = document.getElementById('logout-button');
 const clearButton = document.getElementById('clear');
 const addItemForm = document.getElementById('add-item-form');
+const showAddItem = document.getElementById('show-add-item');
 
 logoutButton.addEventListener('click', () => {
     logout();
+});
+
+showAddItem.addEventListener('click', () => {
+    document.getElementById('add-item-container').classList.remove('hidden');
 });
 
 addItemForm.addEventListener('submit', async (e) => {
@@ -44,5 +49,7 @@ async function displayGroceries() {
 }
 
 clearButton.addEventListener('click', async () => {
-    clearGroceries();
+    console.log('clicked');
+    await clearGroceries();
+    await displayGroceries();
 });
