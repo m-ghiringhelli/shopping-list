@@ -33,8 +33,8 @@ async function displayGroceries() {
     list.innerHTML = '';
     for (let item of groceries) {
         const eachItem = (renderListItem(item));
-        eachItem.addEventListener('click', () => {
-            putInCart(item.id);
+        eachItem.addEventListener('click', async () => {
+            await putInCart(item.id);
             displayGroceries();
         });
         list.append(eachItem);

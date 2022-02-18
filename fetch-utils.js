@@ -26,7 +26,7 @@ export function redirectFromSignUp() {
 }
 
 export async function fetchGroceryItems() {
-    const response = await client.from('groceries').select();
+    const response = await client.from('groceries').select().order('id', { ascending: true });
     return checkError(response);
 }
 
