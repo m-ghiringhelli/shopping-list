@@ -32,7 +32,8 @@ export function redirectFromSignUp() {
 }
 
 export async function fetchGroceryItems() {
-    
+    const response = await client.from('groceries').select();
+    return checkError(response);
 }
 
 export async function signupUser(email, password) {
@@ -53,6 +54,6 @@ export async function logout() {
     return (window.location.href = '../');
 }
 
-// function checkError({ data, error }) {
-//     return error ? console.error(error) : data;
-// }
+function checkError({ data, error }) {
+    return error ? console.error(error) : data;
+}
