@@ -42,6 +42,7 @@ export async function putInCart(id) {
 
 export async function clearGroceries() {
     const response = await client.from('groceries').delete().match({ user_id: getUser().id });
+    return checkError(response);
 }
 
 export async function signupUser(email, password) {
