@@ -7,13 +7,16 @@ import {
     clearGroceries } from '../fetch-utils.js';
 import { renderListItem } from '../render-utils.js';
 
-checkAuth();
-displayGroceries();
-
 const logoutButton = document.getElementById('logout-button');
 const clearButton = document.getElementById('clear');
 const addItemForm = document.getElementById('add-item-form');
 const showAddItem = document.getElementById('show-add-item');
+const groceryList = document.getElementById('grocery-list');
+const listContainer = document.getElementById('grocery-list-container');
+
+checkAuth();
+displayGroceries();
+hideEmptyList();
 
 logoutButton.addEventListener('click', () => {
     logout();
@@ -45,6 +48,12 @@ async function displayGroceries() {
             displayGroceries();
         });
         list.append(eachItem);
+    }
+}
+
+function hideEmptyList() {
+    if (groceryList.childElementCount === 0) {
+        listContainer.classList.add('hidden');
     }
 }
 
