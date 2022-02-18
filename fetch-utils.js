@@ -35,6 +35,11 @@ export async function addGroceryItem(item) {
     return checkError(response);
 }
 
+export async function putInCart(id) {
+    const response = await client.from('groceries').update({ in_cart: true }).match({ id });
+    return checkError(response);
+}
+
 export async function signupUser(email, password) {
     const response = await client.auth.signUp({ email, password });
 

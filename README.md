@@ -50,7 +50,7 @@ I) Create Database
             d) append list  CHECK
 II) Fetch utils
     A) fetch all items                      R   CHECK
-    B) Create item (adds to database)       C
+    B) Create item (adds to database)       C   CHECK
     C) delete all items                     D
     D) bought item                          U
         1) change value to true
