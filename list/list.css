@@ -88,20 +88,20 @@ h2 {
 }
 
 ul {
-    background-color: hsla(240, 9%, 13%, 0.2);
+    background-color: hsla(240, 9%, 13%, 0.05);
     width: 70%;
     margin: auto;
-    padding: 30px 0px;
-    border-radius: 10px;
+    padding: 0px;
+    border-radius: 50px;
     border: solid 3px hsla(248, 49%, 64%, 0.5);
 }
 
 li {
     background-color: var(--color2);
     color: var(--color5);
-    padding: 20px;
-    margin: 5px auto;
-    width: 60%;
+    padding: 30px;
+    margin: 30px auto;
+    width: 80%;
     border: 2px solid var(--color3);
     border-radius: 5px;
 }

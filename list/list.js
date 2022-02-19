@@ -12,8 +12,6 @@ const clearButton = document.getElementById('clear');
 const addItemForm = document.getElementById('add-item-form');
 const showAddItem = document.getElementById('show-add-item');
 
-
-
 checkAuth();
 displayGroceries();
 hideEmptyList();
