@@ -1,0 +1,8 @@
+body {
+    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below */
+    --color1: hsla(240, 9%, 13%, 1);
+    --color2: hsla(100, 100%, 99%, 1);
+    --color3: hsla(128, 97%, 46%, 1);
+    --color4: hsla(148, 24%, 44%, 1);
+    --color5: hsla(248, 49%, 64%, 1);
+}

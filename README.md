@@ -1,8 +1,77 @@
-## The Golden Rule:
-
-🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
-
-If you work on more than one feature at a time, you are guaranteed to multiply your bugs and your anxiety.
+O) Create files
+    A) signin folder
+        1) index.html   CHECK
+        3) signin.js    CHECK
+    B) home (signup) folder CHECK
+        1) index.html   CHECK
+        2) app.js   CHECK
+    C) list folder
+        1) index.html   CHECK
+        2) list.js  CHECK
+        3) list.css CHECK
+    C) styles
+        1) reset.css    CHECK
+        2) home.css CHECK
+        3) styles.css   CHECK
+    D)  tests   CHECK
+    E) link files together correctly
+I) Create Database
+    A) Add table    CHECK
+        1) user_id  CHECK
+            a) default: uid()   CHECK
+        2) item CHECK
+        3) department
+        4) bought status (boolean)  CHECK
+    B) add RLS  CHECK
+        1) users can only access their rows CHECK
+        2) uid() = user_id? CHECK
+    C) add to html/js
+        1) add key  CHECK
+        2) add url  CHECK
+        3) add in html  CHECK
+    D) Okay I need the bare minimum of html to see what's going on and getting this functioning
+        1) signup (home)
+            a) form CHECK
+            b) button   CHECK
+            c) eventlisteners
+            d) let's verify signup works    CHECK
+            e) and redirecting to signin
+            f) redirect to list on sign up
+        2) signin
+            a) form CHECK
+            b) button   CHECK
+            c) eventlisteners   CHECK
+            d) let's verify login works CHECK
+            e) and redirecting to list  CHECK
+        3) list (main)
+            a) add item form    CHECK
+            b) get list CHECK
+            c) render list  CHECK
+            d) append list  CHECK
+II) Fetch utils
+    A) fetch all items                      R   CHECK
+    B) Create item (adds to database)       C   CHECK
+    C) delete all items                     D
+    D) bought item                          U   CHECK
+        1) change value to true CHECK
+III) Render database
+    A) Renderitem   CHECK
+        1) create sample html   CHECK
+        2) grab object from database to copy to test    CHECK
+        3) TDD  CHECK
+    B) Append to DOM    CHECK
+        1) render items CHECK
+IV) Add item
+    A) Create item - II)B   CHECK
+    B) Rerender to display new database CHECK
+        1) reset    CHECK
+        2) display again    CHECK
+V) Checkoff item
+    A) Add event listener to items  CHECK
+    B) Add class to items   CHECK
+VI) Delete items
+    A) Delete items function
+    B) Rerender on DOM
 
 ## Making a plan
 
